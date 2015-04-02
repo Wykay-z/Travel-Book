@@ -1,3 +1,6 @@
 Travel Book is an interactive app book, based on LBS and GPS. It’s made up of users’ travel journals, so it can be used to share travel tips. The app will conclude three places: Hong Kong, Tai Wan and Xia Men, which represent three chapters, and cities’ districts represents sections in a chapter. The app will interact with users by two ways. The first one is the travel book: the book is consist of best journals of each users and is visible to every user; The second one is interactive with two users in succession, which means the user’s all journals will be visible to the next user. In short, all the users have a common travel book and the special journal of the previous visitor.
 
 Travel Book 是一本基于LBS与GPS结合、由用户的游记集合而成的互动式旅游攻略书籍。这款应用初期会包括香港、台湾、厦门三个地点，分别为书籍的三个章节，市里各区为一小节。应用会有两条线在用户中进行互动，第一条线为travel book，这本书会由各个用户的少量精选游记组成，对所有用户可见；第二条线仅在相继到来的两个用户间进行互动，即到此地的用户的所有游记对下一个用户完全可见。即所有用户都将拥有一本统一的书籍以及上一位用户留下的个人专属游记。
+
+
+DEMO: http://wykay-z.com/travelbook/
