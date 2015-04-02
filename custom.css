@@ -1,0 +1,85 @@
+* {
+	font-family: Trebuchet MS, Helvetica, Arial;
+}
+
+/*div.ui-content {
+	margin: -1em;
+	margin-top: -1em;
+}*/
+div.ui-header {
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 10;
+}
+div.ui-content {
+	margin-top: 2.5em;
+}
+
+div#currentposition {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	margin: -1em;
+
+}
+#currentposition p {
+	margin-top: -2.5em;
+	font-size: .8em;
+	color: #60584D;
+	margin-bottom: 1.5em;
+}
+
+
+ul.ui-listview li a {
+	display: block;
+	padding: 0.5em;
+	padding-bottom: 1em;
+}
+ul.ui-listview li a img {
+	display: block;
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+}
+ul.ui-listview li a.ui-btn {
+	background-color: #EAE0C7;
+}
+ul.ui-listview li a.ui-btn:hover {
+	background-color: #F5EFE1;
+}
+ul.ui-listview li a.ui-btn:visited {
+	background-color: #EAE0C7;
+}
+
+ul.ui-listview li#prevPer a.ui-btn {
+	background-color: #E76E5D;
+	color: #E9E2C8;
+	text-shadow: none;
+}
+
+
+#lastperson #personinfo,
+#lastperson2 #personinfo,
+#lastperson3 #personinfo,
+#myjournal #personinfo {
+	background-color: #E76E5D;
+	margin: -1em;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	color: #E9E2C8;
+	text-shadow: none;
+}
+
+#lastperson form.ui-filterable,
+#lastperson2 form.ui-filterable,
+#lastperson3 form.ui-filterable,
+#myjournal form.ui-filterable {
+	margin: -1em;
+	margin-top: 2em;
+	margin-bottom: 0em;
+}
+
+#aboutChi {
+	font-family: "华文细黑"，"黑体";
+}

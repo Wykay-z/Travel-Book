@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel Book</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile/themes/GreenRed.css" />
+  	<link rel="stylesheet" href="jquery.mobile/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure-1.4.3.css" />
+
+
+	<link rel="apple-touch-icon-precomposed" href="images/icon57.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon144.png">
+
+	<link rel="icon" href="images/icon144.png"/>
+	<link rel="shortcut icon" href="images/icon144.png" />
+
+	<script src="jquery.mobile/jquery-2.1.1.min.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.4.3.min.js"></script>
+
+	<link rel="stylesheet" href="custom.css">
+
+</head>
+<body>
+
+	<div id="main" data-role="page">
+		<div data-role="header">
+			<a href="#about" data-role="button" data-rel="dialog">About</a>	
+			<h1> Travel Book </h1>
+			<a href="#mybook" data-role="button" data-transition="slidedown">My Book</a>
+		</div>
+
+		<div data-role="content">
+			<div id="currentposition">
+				<img width="100%" src="images/map.jpg" />
+				<p>The position you are: Chaoyang, Beijing</p>
+				
+			</div>
+
+			<ul data-role="listview">
+				<li>
+					<a href="#hongkong" data-transition="slidefade">
+						<img src="images/hongkong.png">
+						<h3> Hong Kong </h3>
+						<p> Distance: 2200km </p>
+						<p> Weather: 17~19 </p>
+						<p> Hong Kong is a wonderful view! </p>
+					</a>
+				</li>
+				<li>
+					<a href="#arrive" data-rel="dialog">
+						<img src="images/xiamen.png">
+						<h3> Xia Men </h3>
+						<p> Distance: 1800km </p>
+						<p> Weather: 17~19 </p>
+						<p> Hong Kong is a wonderful view! </p>
+					</a>
+				</li>
+				<li>
+					<a href="#leave" data-rel="dialog">
+						<img src="images/taiwan.png">
+						<h3> Tai Wan </h3>
+						<p> Distance: 2200km</p>
+						<p> Weather: 17~19 </p>
+						<p> Hong Kong is a wonderful view! </p>
+					</a>
+					<!-- <a href="#">Tai Wan</a> -->
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+<!---     Pages about Cities      -->
+	<div id="hongkong" data-role="page">
+		<div data-role="header">
+			<a href="#main" data-role="button" data-transition="slidefade" data-direction="reverse">Back</a>
+			<h1> Hong Kong </h1>
+			<a href="#mybook" data-role="button" data-transition="slidedown">My Book</a>
+		</div>
+
+		<div data-role="content">
+
+			<ul data-role="listview">
+				<li>
+					<a href="#locked" data-rel="dialog">
+						<img src="images/region.png">
+						<h3> #1: ZhongXi </h3>
+						<p> Pages: 200 </p>
+						<p> Locked! </p>
+					</a>
+				</li>
+				<li>
+					<a href="#unlocked" data-transition="slidefade">
+						<img src="images/taiwan.png">
+						<h3> #2: GuanTang </h3>
+						<p> Pages: 200 </p>
+						<p> Opened!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-rel="dialog">
+						<img src="images/xiamen.png">
+						<h3> #3: XiGong </h3>
+						<p> Pages: 200 </p>
+						<p> Locked!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-rel="dialog">
+						<img src="images/hongkong.png">
+						<h3> #1: ZhongXi </h3>
+						<p> Pages: 200 </p>
+						<p> Locked! </p>
+					</a>
+				</li>
+				<li>
+					<a href="#unlocked" data-transition="slidefade">
+						<img src="images/taiwan.png">
+						<h3> #2: GuanTang </h3>
+						<p> Pages: 200 </p>
+						<p> Opened!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-transition="slidefade">
+						<img src="images/region.png">
+						<h3> #3: XiGong </h3>
+						<p> Pages: 200 </p>
+						<p> Locked!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-transition="slidefade">
+						<img src="images/xiamen.png">
+						<h3> #1: QuanWan </h3>
+						<p> Pages: 200 </p>
+						<p> Locked! </p>
+					</a>
+				</li>
+				<li>
+					<a href="#unlocked" data-transition="slidefade">
+						<img src="images/hongkong.png">
+						<h3> #2: GuanTang </h3>
+						<p> Pages: 200 </p>
+						<p> Opened!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-transition="slidefade">
+						<img src="images/xiamen.png">
+						<h3> #3: XiGong </h3>
+						<p> Pages: 200 </p>
+						<p> Locked!</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<!-- 	<div id="xiamen" data-role="page">
+		<div data-role="header">
+			<a href="#main" data-role="button" data-transition="slidefade" data-direction="reverse">Back</a>
+			<h1> Xia Men </h1>
+		</div>
+
+		<div data-role="content">
+
+			<ul data-role="listview">
+				<li>
+					<a href="#locked" data-rel="dialog">
+						<img src="images/region.png">
+						<h3> #1: ZhongXi </h3>
+						<p> Pages: 200 </p>
+						<p> Locked! </p>
+					</a>
+				</li>
+				<li>
+					<a href="#unlocked" data-transition="slidefade">
+						<img src="images/taiwan.png">
+						<h3> #2: GuanTang </h3>
+						<p> Pages: 200 </p>
+						<p> Opened!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-rel="dialog">
+						<img src="images/xiamen.png">
+						<h3> #3: XiGong </h3>
+						<p> Pages: 200 </p>
+						<p> Locked!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-rel="dialog">
+						<img src="images/hongkong.png">
+						<h3> #1: ZhongXi </h3>
+						<p> Pages: 200 </p>
+						<p> Locked! </p>
+					</a>
+				</li>
+				<li>
+					<a href="#unlocked" data-transition="slidefade">
+						<img src="images/taiwan.png">
+						<h3> #2: GuanTang </h3>
+						<p> Pages: 200 </p>
+						<p> Opened!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-transition="slidefade">
+						<img src="images/region.png">
+						<h3> #3: XiGong </h3>
+						<p> Pages: 200 </p>
+						<p> Locked!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-transition="slidefade">
+						<img src="images/xiamen.png">
+						<h3> #1: QuanWan </h3>
+						<p> Pages: 200 </p>
+						<p> Locked! </p>
+					</a>
+				</li>
+				<li>
+					<a href="#unlocked" data-transition="slidefade">
+						<img src="images/hongkong.png">
+						<h3> #2: GuanTang </h3>
+						<p> Pages: 200 </p>
+						<p> Opened!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#locked" data-transition="slidefade">
+						<img src="images/xiamen.png">
+						<h3> #3: XiGong </h3>
+						<p> Pages: 200 </p>
+						<p> Locked!</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+
+
+<!-- 	<div id="taiwan" data-role="page">
+		<div data-role="header">
+			<a href="#main" data-role="button" data-transition="slidefade" data-direction="reverse">Back</a>
+			<h1> Tai Wan </h1>
+		</div>
+
+		<div data-role="content">
+			<div id="currentposition">
+				<img src="images/map.jpg"/>
+			</div>
+
+			<ul data-role="listview">
+				<li>
+					<a href="#">
+						<img src="">
+						<h3> #1: WanZai </h3>
+						<p> Locked! </p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3> #2: YuanLang </h3>
+						<p> Opened!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3> #3: ShaTian </h3>
+						<p> Locked!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3> #4: ShaTian </h3>
+						<p> Locked!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3> #5: ShaTian </h3>
+						<p> Locked!</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+
+<!---      Pages about regions of the city    -->
+	<div id="locked" data-role="page">
+		<div data-role="header">
+			<h1> Warning </h1>
+		</div> 
+		<div data-role="content">
+			<p style="text-align:center;margin-top:0px;color:#60584D;">You can only see one page before you unlock the region! If you want to know more, please go on a trip!</p>
+			<a href="#locked2" data-role="button" data-transition="slidefade"> Continue </a>
+		</div>
+		<div data-role="footer">
+			<h1> </h1>
+		</div> 		
+	</div>
+
+	<div id="locked2" data-role="page">
+		<div data-role="header">
+			<a href="#hongkong" data-role="button" data-transition="slidefade" data-direction="reverse"> Back </a>
+			<h1> #X: XXX </h1>
+			<a href="#mybook" data-role="button" data-transition="slidedown">My Book</a>
+		</div> 
+		<div data-role="content">
+			<div id="currentposition">
+				<img width="100%" src="images/regionmap.jpg" />	
+			</div>
+
+			<ul data-role="listview">
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+			</ul>
+
+			<a href="#toUnlock" data-role="button" data-rel="dialog"> Unlock this section!</a>
+		</div>		
+	</div>
+
+	<div id="toUnlock" data-role="page">
+		<div data-role="header">
+			<h1> Warning </h1>
+		</div> 
+		<div data-role="content">
+			<p style="text-align:center;margin-top:0px;color:#60584D;"> If you want to know more, please go on a trip!</p>
+			
+		</div>
+		<div data-role="footer">
+			<h1> </h1>
+		</div> 		
+	</div>
+	
+	<div id="unlocked" data-role="page">
+		<div data-role="header">
+			<a href="#hongkong" data-role="button" data-transition="slidefade" data-direction="reverse"> Back </a>
+			<h1> #X: XXX </h1>
+			<a href="#mybook" data-role="button" data-transition="slidedown">My Book</a>
+		</div> 
+		<div data-role="content">
+
+			<div id="currentposition">
+				<img width="100%" src="images/regionmap.jpg" />	
+			</div>
+
+			<ul data-role="listview" >
+				<li id="prevPer">
+					<a href="#lastperson" data-transition="slidefade">
+						<img src="images/taiwan.png">
+						<h3> Fiona Sit</h3>
+						<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</a>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p>2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p>2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p>2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+			</ul>
+		</div>		
+	</div>
+
+	<div id="unlocked2" data-role="page">
+		<div data-role="header">
+			<a href="#mybook" data-role="button" data-transition="slidefade" data-direction="reverse"> Back </a>
+			<h1> #X: XXX </h1>
+			
+		</div> 
+		<div data-role="content">
+
+			<div id="currentposition">
+				<img width="100%" src="images/regionmap.jpg" />	
+			</div>
+
+			<ul data-role="listview" >
+				<li id="prevPer">
+					<a href="#lastperson" data-transition="slidefade">
+						<img src="images/taiwan.png">
+						<h3> Fiona Sit</h3>
+						<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</a>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p>2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p>2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p>2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+			</ul>
+		</div>		
+	</div>
+
+	<div id="unlockedArv" data-role="page">
+		<div data-role="header">
+			<a href="#main" data-role="button" data-transition="slidefade" data-direction="reverse"> Back </a>
+			<h1> #X: XXX </h1>
+			<a href="#mybook" data-role="button" data-transition="slidedown">My Book</a>
+		</div> 
+		<div data-role="content">
+
+			<div id="currentposition">
+				<img width="100%" src="images/regionmap.jpg" />	
+			</div>
+
+			<ul data-role="listview" >
+				<li id="prevPer">
+					<a href="#lastperson2" data-transition="slidefade">
+						<img src="images/taiwan.png">
+						<h3> Fiona Sit</h3>
+						<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</a>
+				</li>
+				<li >
+					<a href="#writeJN" data-role="button" data-rel="dialog" style="display:block;text-align:center;">Write Journal!</a>
+					<a href="#callGPS" data-role="button" data-rel="dialog" style="display:block;text-align:center;">CALL GPS!(Simulation!)</a>
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p>2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p>2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p>2012-04-10</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+			</ul>
+		</div>		
+	</div>
+	<div id="callGPS" data-role="page">
+		<div data-role="header">
+			<h1> GPS Simulation! </h1>
+		</div> 
+		<div data-role="content">
+			<p style="text-align:center;margin-top:0px;color:#60584D;">You have arrived in XXX. A few people have left some tips for you? </br> Want to see?</p>
+			<a href="#unlockedArv" data-role="button" data-transition="slidefade"> OK!</a>
+		</div>
+		<div data-role="footer">
+			<h1> </h1>
+		</div> 		
+	</div>
+	<div id="writeJN" data-role="page">
+		<div data-role="header">
+			<h1> Write Journal </h1>
+		</div> 
+		<div data-role="content">
+			<form method="post" action="unlockedArv.html">
+		    	<div data-role="fieldcontain">
+		    		<a href="#" data-role="button">Take a photo!</a>
+		    		<fieldset>
+					   <label for="feeling" class="ui-hidden-accessible">Choose feeling:</label>
+					   <select width="100%" name="feeling" id="feeling">
+						<option>Feeling</option>
+						<option value="Excellent">Excellent</option>
+						<option value="Excellent">Excellent</option>
+						<option value="Great">Great</option>
+						<option value="Good">Good</option>
+						<option value="Bad">Bad</option>
+						<option value="Worst">Worst</option>
+					   </select>
+					</fieldset>
+		    		<label for="info" class="ui-hidden-accessible">Words:</label>
+		    		<textarea name="addinfo" id="info" placeholder="say something"></textarea>
+		    	</div>
+
+		    	<input  type="submit" value="Submit">
+		    </form> 
+		</div>
+		<div data-role="footer">
+			<h1> </h1>
+		</div> 		
+	</div>
+
+
+	<div id="lastperson" data-role="page">
+		<div data-role="header">
+			<a href="#unlocked" data-role="button" data-transition="slidefade" data-direction="reverse"> Back </a>
+			<h1> #X: XXX </h1>
+			<a href="#mybook" data-role="button" data-transition="slidedown">My Book</a>
+		</div> 
+		<div data-role="content">
+			<div id="personinfo">
+				<img src="images/photo.png" />	
+				<h3> Fiona Sit</h3>
+				<p style=" white-space: normal; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+			</div>
+
+			<ul data-role="listview" data-filter="true">
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-10 || Excellent</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-11 || Great</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-10 || Good</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-09 || Bad</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-11 || Bad</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+			</ul>
+		</div>		
+	</div>
+
+	<div id="lastperson2" data-role="page">
+		<div data-role="header">
+			<a href="#unlockedArv" data-role="button" data-transition="slidefade" data-direction="reverse"> Back </a>
+			<h1> #X: XXX </h1>
+			<a href="#mybook" data-role="button" data-transition="slidedown">My Book</a>
+		</div> 
+		<div data-role="content">
+			<div id="personinfo">
+				<img src="images/photo.png" />	
+				<h3> Fiona Sit</h3>
+				<p style=" white-space: normal; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+			</div>
+
+			<ul data-role="listview" data-filter="true">
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-10 || Excellent</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-11 || Great</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-10 || Good</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-09 || Bad</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-11 || Bad</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+			</ul>
+		</div>		
+	</div>
+
+	<div id="lastperson3" data-role="page">
+		<div data-role="header">
+			<a href="#main" data-role="button" data-transition="slidefade" data-direction="reverse"> Back </a>
+			<h1> #X: XXX </h1>
+			<a href="#mybook" data-role="button" data-transition="slidedown">My Book</a>
+		</div> 
+		<div data-role="content">
+			<div id="personinfo">
+				<img src="images/photo.png" />	
+				<h3> Fiona Sit</h3>
+				<p style=" white-space: normal; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+			</div>
+
+			<ul data-role="listview" data-filter="true">
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-10 || Excellent</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-11 || Great</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-10 || Good</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-09 || Bad</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-11 || Bad</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+			</ul>
+		</div>		
+	</div>
+
+	<div id="myjournal" data-role="page">
+		<div data-role="header">
+			<a href="#mybook" data-role="button" data-transition="slidefade" data-direction="reverse"> Back </a>
+			<h1> #X: XXX </h1>
+		</div> 
+		<div data-role="content">
+			<div id="personinfo">
+				<img src="images/photo.png" />	
+				<h3> Me </h3>
+				<p style=" white-space: normal; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+			</div>
+
+			<ul data-role="listview" data-filter="true">
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-10 || Excellent</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-11 || Great</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-10 || Good</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-09 || Bad</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+				<li >
+					<p><img style="text-align:center;width:99%;border:2px solid white;" src="images/hkmap.jpg"></p>
+					<h3> Happy day in Hong Kong</h3>
+					<p >2012-04-11 || Bad</p>
+					<p style=" white-space: normal; "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</li>
+			</ul>
+		</div>		
+	</div>
+
+
+	<div id="arrive" data-role="page">
+		<div data-role="header">
+			<h1> GPS Simulation! </h1>
+		</div> 
+		<div data-role="content">
+			<p style="text-align:center;margin-top:0px;color:#60584D;">You have arrived in this region. The part of this region in the Travel Book has unlocked for you! You can see the information that people had arrived give to you. </br> Welcome To You!</p>
+			<a href="#unlockedArv" data-role="button" data-transition="slidefade"> Go Ahead!</a>
+		</div>
+		<div data-role="footer">
+			<h1> </h1>
+		</div> 		
+	</div>
+
+	<div id="leave" data-role="page">
+		<div data-role="header">
+			<h1> GPS Simulation! </h1>
+		</div> 
+		<div data-role="content">
+			<p style="text-align:center;margin-top:0px;color:#60584D;">You just left this region! You can share one of your tips to all the persons arrive here. Thank You! </br> Looking forward to your next visit! </p>
+			<a href="#lastperson3" data-role="button" data-transition="slidefade"> Choose an item!</a>
+		</div>
+		<div data-role="footer">
+			<h1> </h1>
+		</div> 		
+	</div>
+				
+
+
+<!---   Pages about Users     -->
+	<div id="mybook" data-role="page">
+		<div data-role="header">
+			<a href="#about" data-role="button" data-rel="dialog"> About</a>	
+			<h1> My Book </h1>
+			<a href="#main" data-role="button"  data-transition="slideup">Travel Book </a>
+		</div>
+
+		<div data-role="content">
+			<div data-role="collapsible">
+				<h3> Hong Kong <span> 4/18</span></h3>
+				<ul data-role="listview" >
+					<li>
+						<h3 text-align="center">#1: WanZai</h3>
+
+						<p><a href="#myjournal" data-role="button">My Journal</a><a href="#unlocked2" data-role="button">Others' Journal</a></p>
+					</li>
+					<li>
+						<h3 text-align="center">#3: WanZai</h3>
+						<p><a href="#myjournal" data-role="button">My Journal</a><a href="#unlocked2" data-role="button">Others' Journal</a></p>
+					</li>
+					<li>
+						<h3 text-align="center">#5: WanZai</h3>
+						<p><a href="#myjournal" data-role="button">My Journal</a><a href="#unlocked2" data-role="button">Others' Journal</a></p>
+					</li>
+					<li>
+						<h3 text-align="center">#11: WanZai</h3>
+						<p><a href="#myjournal" data-role="button">My Journal</a><a href="#unlocked2" data-role="button">Others' Journal</a></p>
+					</li>
+				</ul>
+			</div>
+
+			<div data-role="collapsible">
+				<h3> Xia Men <span> 0/18</span></h3>
+				<ul data-role="listview">
+				</ul>
+			</div>
+
+			<div data-role="collapsible">
+				<h3> Tai Wan <span> 0/18</span></h3>
+				<ul data-role="listview">
+				</ul>
+			</div>
+		</div>
+	</div>	
+
+	<div id="about" data-role="page">
+		<div data-role="header">
+			<h1>Travel Book</h1>
+		</div>
+		<div data-role="content">
+			<p>Travel Book is an interactive app book, based on LBS and GPS. It’s made up of users’ travel journals, so it can be used to share travel tips. The app will conclude three places: Hong Kong, Tai Wan and Xia Men, which represent three chapters, and cities’ districts represents sections in a chapter. The app will interact with users by two ways. The first one is the travel book: the book is consist of best journals of each users and is visible to every user; The second one is interactive with two users in succession, which means the user’s all journals will be visible to the next user. In short, all the users have a common travel book and the special journal of the previous visitor.
+</p>
+			<p id="aboutChi">Travel Book 是一本基于LBS与GPS结合、由用户的游记集合而成的互动式旅游攻略书籍。这款应用初期会包括香港、台湾、厦门三个地点，分别为书籍的三个章节，市里各区为一小节。应用会有两条线在用户中进行互动，第一条线为travel book，这本书会由各个用户的少量精选游记组成，对所有用户可见；第二条线仅在相继到来的两个用户间进行互动，即到此地的用户的所有游记对下一个用户完全可见。即所有用户都将拥有一本统一的书籍以及上一位用户留下的个人专属游记。</p>
+			
+		</div>
+
+	</div>
+</body>
+</html>
